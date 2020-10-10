@@ -1,0 +1,13 @@
+---
+- hosts: cluster
+  tasks:
+    - name: copy .bashrc to slaves
+      copy: src=~/.bashrc dest=~/
+      notify:
+        - exec source
+    - name: copy hadoop-dis.tar to slaves
+      unarchive: src=/opt/hadoop-dis.tar dest=/opt
+  handlers:
+    - name: exec source
+      shell: source ~/.bashrc
+      
