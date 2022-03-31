@@ -13,7 +13,7 @@ Recently, I have to finish a task that requires me deploying a Hadoop cluster. B
 If you have install `git` , you can use the following command
 
 ```shell
-git clone https://github.com/ZhaoDawnG/hadoop-autodeploy-with-docker.git
+git clone https://github.com/ZDawnG/hadoop-autodeploy-with-docker.git
 ```
 
 If you don't have it, you can download this repository to your machine and extract it to a folder.
